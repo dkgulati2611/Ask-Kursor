@@ -1,0 +1,21 @@
+{
+    "name": "Ask Kursor",
+    "version": "1.0",
+    "description": "Allows users to select text and display it in an adaptive floating window.",
+    "icons": {
+      "16": "icon.png",
+      "32": "icon.png"
+    },
+    "permissions": ["contextMenus"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+         "matches": ["<all_urls>"],
+         "js": ["content.js"]
+      }
+   ],
+    "manifest_version": 3
+  }
+  
